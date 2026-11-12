@@ -2,11 +2,13 @@
 
 import { motion } from "framer-motion";
 import { usePrefs } from "@/components/Preferences";
+import { HardHat } from "lucide-react"; // Ajout de l'icône pour Hardhat
 import {
   SiPython, SiRust, SiTypescript, SiFastapi, SiNodedotjs,
-  SiPostgresql, SiOpenai, SiSolidity, SiEthereum,
-  SiHardhat, SiGit, SiDocker
+  SiPostgresql, SiSolidity, SiEthereum,
+  SiGit, SiDocker
 } from "react-icons/si";
+import { BiOpenai } from "react-icons/bi"; // Import corrigé pour OpenAI
 
 const toolkit = [
   { name: "Python", icon: <SiPython /> },
@@ -14,11 +16,11 @@ const toolkit = [
   { name: "TypeScript", icon: <SiTypescript /> },
   { name: "FastAPI", icon: <SiFastapi /> },
   { name: "Node.js", icon: <SiNodedotjs /> },
-  { name: "SQL", icon: <SiPostgresql /> }, // PostgreSQL est utilisé comme représentant visuel du SQL
-  { name: "LLMs / RAG", icon: <SiOpenai /> },
+  { name: "SQL", icon: <SiPostgresql /> },
+  { name: "LLMs / RAG", icon: <BiOpenai /> }, // Utilisation de BiOpenai
   { name: "Solidity", icon: <SiSolidity /> },
   { name: "Ethereum", icon: <SiEthereum /> },
-  { name: "Hardhat", icon: <SiHardhat /> },
+  { name: "Hardhat", icon: <HardHat /> }, // Utilisation de HardHat de lucide-react
   { name: "Git", icon: <SiGit /> },
   { name: "Docker", icon: <SiDocker /> },
 ];
