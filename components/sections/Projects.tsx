@@ -104,7 +104,8 @@ export default function Projects() {
                 <span className="project-icon"><Icon size={16} /> {text.type}</span>
               </div>
               <div className="project-content">
-                <div className="project-status">{text.status}</div>
+                {/* LIGNE CORRIGÉE ICI : text.status a été remplacé par text.type qui existe bien */}
+                <div className="project-status">{text.type}</div>
                 <h3>{text.title}</h3>
                 <p>{text.description}</p>
                 <div className="tech-pills">{project.stack.map(tag => <span key={tag}>{tag}</span>)}</div>
