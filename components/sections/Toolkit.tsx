@@ -2,13 +2,12 @@
 
 import { motion } from "framer-motion";
 import { usePrefs } from "@/components/Preferences";
-import { HardHat } from "lucide-react"; // Ajout de l'icône pour Hardhat
+import { HardHat, BrainCircuit } from "lucide-react"; // Ajout de BrainCircuit pour l'IA
 import {
   SiPython, SiRust, SiTypescript, SiFastapi, SiNodedotjs,
   SiPostgresql, SiSolidity, SiEthereum,
   SiGit, SiDocker
 } from "react-icons/si";
-import { BiOpenai } from "react-icons/bi"; // Import corrigé pour OpenAI
 
 const toolkit = [
   { name: "Python", icon: <SiPython /> },
@@ -17,10 +16,10 @@ const toolkit = [
   { name: "FastAPI", icon: <SiFastapi /> },
   { name: "Node.js", icon: <SiNodedotjs /> },
   { name: "SQL", icon: <SiPostgresql /> },
-  { name: "LLMs / RAG", icon: <BiOpenai /> }, // Utilisation de BiOpenai
+  { name: "LLMs / RAG", icon: <BrainCircuit /> }, // Icône garantie
   { name: "Solidity", icon: <SiSolidity /> },
   { name: "Ethereum", icon: <SiEthereum /> },
-  { name: "Hardhat", icon: <HardHat /> }, // Utilisation de HardHat de lucide-react
+  { name: "Hardhat", icon: <HardHat /> }, // Icône garantie
   { name: "Git", icon: <SiGit /> },
   { name: "Docker", icon: <SiDocker /> },
 ];
